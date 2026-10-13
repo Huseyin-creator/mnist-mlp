@@ -1,0 +1,139 @@
+{
+  "best": "deney6_veri_artirma",
+  "hyperparameters": {
+    "epochs": 20,
+    "batch_size": 64,
+    "seed": 42,
+    "loss": "CrossEntropyLoss",
+    "split": "50000 train / 10000 val / 10000 test"
+  },
+  "results": {
+    "deney1_temel": {
+      "config": {
+        "hidden": [
+          256,
+          128
+        ],
+        "dropout": 0.0,
+        "optimizer": "adam",
+        "lr": 0.001,
+        "augment": false
+      },
+      "params": 235146,
+      "best_epoch": 18,
+      "train_loss": 0.011605662854241673,
+      "train_acc": 0.9963,
+      "val_loss": 0.1035500481724739,
+      "val_acc": 0.9812,
+      "train_time_sec": 42.5,
+      "test_loss": 0.11061004698276519,
+      "test_acc": 0.9811
+    },
+    "deney2_genis": {
+      "config": {
+        "hidden": [
+          512,
+          256
+        ],
+        "dropout": 0.0,
+        "optimizer": "adam",
+        "lr": 0.001,
+        "augment": false
+      },
+      "params": 535818,
+      "best_epoch": 18,
+      "train_loss": 0.01244337708321058,
+      "train_acc": 0.9964,
+      "val_loss": 0.11145607829093933,
+      "val_acc": 0.9819,
+      "train_time_sec": 47.9,
+      "test_loss": 0.10644502341747283,
+      "test_acc": 0.9793
+    },
+    "deney3_derin": {
+      "config": {
+        "hidden": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.0,
+        "optimizer": "adam",
+        "lr": 0.001,
+        "augment": false
+      },
+      "params": 567434,
+      "best_epoch": 17,
+      "train_loss": 0.013244255151064135,
+      "train_acc": 0.99594,
+      "val_loss": 0.10069311112165451,
+      "val_acc": 0.9817,
+      "train_time_sec": 71.1,
+      "test_loss": 0.1148555763065815,
+      "test_acc": 0.9811
+    },
+    "deney4_sgd": {
+      "config": {
+        "hidden": [
+          256,
+          128
+        ],
+        "dropout": 0.0,
+        "optimizer": "sgd",
+        "lr": 0.01,
+        "augment": false
+      },
+      "params": 235146,
+      "best_epoch": 13,
+      "train_loss": 0.0018263027602341026,
+      "train_acc": 0.99992,
+      "val_loss": 0.07541085630655289,
+      "val_acc": 0.981,
+      "train_time_sec": 16.3,
+      "test_loss": 0.06714462712407113,
+      "test_acc": 0.9833
+    },
+    "deney5_dropout": {
+      "config": {
+        "hidden": [
+          512,
+          256
+        ],
+        "dropout": 0.2,
+        "optimizer": "adam",
+        "lr": 0.001,
+        "augment": false
+      },
+      "params": 535818,
+      "best_epoch": 19,
+      "train_loss": 0.032775773994750346,
+      "train_acc": 0.99018,
+      "val_loss": 0.10499357134103775,
+      "val_acc": 0.9812,
+      "train_time_sec": 62.6,
+      "test_loss": 0.09289722852408885,
+      "test_acc": 0.9818
+    },
+    "deney6_veri_artirma": {
+      "config": {
+        "hidden": [
+          512,
+          256
+        ],
+        "dropout": 0.2,
+        "optimizer": "adam",
+        "lr": 0.001,
+        "augment": true
+      },
+      "params": 535818,
+      "best_epoch": 18,
+      "train_loss": 0.08890051377594471,
+      "train_acc": 0.97324,
+      "val_loss": 0.03942899256944656,
+      "val_acc": 0.9889,
+      "train_time_sec": 90.7,
+      "test_loss": 0.044285547360777854,
+      "test_acc": 0.9868
+    }
+  }
+}
